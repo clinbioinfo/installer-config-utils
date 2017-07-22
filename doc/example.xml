@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<prompts>
+  <prompt>
+    <question>Do you like pizza?</question>
+    <parameter-name>pizza-liker</parameter-name>
+    <desc><![CDATA[
+      Pizza is important for everyone.
+      Please review the importance of pizza here:
+      https://en.wikipedia.org/wiki/Pizza
+    ]]></desc>
+    <acceptable-values>
+      <value>Yes</value>
+      <value>No</value>
+    </acceptable-values>
+  </prompt>
+  <prompt>
+    <question>Which directory should I write the pizza configuration file to?</question>
+    <parameter-name>config-file-outdir</parameter-name>
+    <desc><![CDATA[
+      The pizza configuration file contains vital information.
+      Our installer program will utilize the contents of the configuration file
+      to ensure that your pizza app is successfully installed.
+    ]]></desc>
+    <example-values>
+      <value>/tmp/pizza-app/</value>
+      <value>/opt/pizza-app</value>
+    </example-values>
+  </prompt>
+</prompts>
