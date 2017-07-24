@@ -295,6 +295,8 @@ sub _prompt_user {
 
                 $record->setAnswer($options_lookup->{$answer});
 
+                $self->{_logger}->info("User answered '$options_lookup->{$answer}' for prompt '$prompt'");
+
                 last;
             }
             else {
@@ -306,7 +308,11 @@ sub _prompt_user {
         }
         else {
             if ((defined($answer)) && ($answer ne '')){
+
                 $record->setAnswer($answer);
+
+                $self->{_logger}->info("User answered '$answer' for prompt '$prompt'");
+
                 last;
             }
             else {
