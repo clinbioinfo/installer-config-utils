@@ -293,7 +293,7 @@ sub _prompt_user {
 
             if (exists $options_lookup->{$answer}){
 
-                $record->setAnswer($answer);
+                $record->setAnswer($options_lookup->{$answer});
 
                 last;
             }
